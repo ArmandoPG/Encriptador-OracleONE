@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+    <title>Encriptador</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <nav>
+                <img src="img/logo1.png">
+            </nav>
+        </div>
+    </header>
+
+
+    <form>
+        <textarea id="texto-id" class="input-texto" cols="20" rows="11" required placeholder="Ingrese el texto aqui"></textarea></br>
+        <p class="restricciones">&#10071 Solo letras minusculas y sin acento.</p>
+        <button class="enviar" onclick="event.preventDefault(); Encriptar()">Encriptar</button>
+        <button class="enviar" onclick="event.preventDefault(); Desencriptar()">Desencriptar</button>
+        
+    </form>
+
+
+    <section id="muestra">
+        <div class="rectangulo"></div>
+        <div class="imgBusqueda">
+            <img id="img" src="img/busqueda.png">
+        </div>
+        <h1 id="respuesta">Ningun mensaje fue encontrado.</h1>
+        <p id="respuesta-p">Ingresa el texto que desees encriptar o desencriptar.</p>
+        <p id="copiar-resp"></p>
+    </section>
+
+    <section>
+        <footer class="pie">
+            <p class="Copyright">&copy Copyright CodeCrushers - 2023</p>
+        </footer>
+    </section>
+</body>
+
+</html>
